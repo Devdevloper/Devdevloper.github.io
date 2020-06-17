@@ -7,21 +7,46 @@ function log() {
         alert("Please enter your credential");
     } else {
         //const auth = firebase.auth();
-        const promise = auth.signInWithEmailAndPassword(u.value, p.value);
+        const promise = auth.signInWithEmailAndPassword(u.value, p.value).then(function(result) {
+			
+	
+var nuser = firebase.auth().currentUser;
+
+if (nuser != null) {
+	
+	var namehere="";
+	
+	var ref = firebase.database().ref("Private/Users/" + nuser.uid+"/UserData");
+ref.once("value")
+  .then(function(snapshot) {
+    namehere = snapshot.child("Name").val();
+				            alert("Login Success\nHi "+namehere);
+
+  });
+	
+			
+			
+						//window.open("sign.html", "_self");
+}
+			
+			
+						
+
+			
+		}).catch(function(error) {
+    // Handle error.
+	alert("Error"+error.message);
+  })
+  
+  
+  
         promise.catch(e => alert(e.message));
 
 
         // Handle Errors here.
         //window.alert("Warning : Enter proper details");
     }
-    firebase.auth().onAuthStateChanged(firebaseUser => {
-        if (firebaseUser) {
-            window.alert("Failuare");
-        } else {
-            alert("Success");
-        }
-
-    });
+  
 
 }
 

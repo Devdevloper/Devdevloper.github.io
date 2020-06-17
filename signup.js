@@ -25,15 +25,29 @@ function card() {
         });
 
         const auth = firebase.auth();
-        const promise = auth.createUserWithEmailAndPassword(i.value, p.value);
+        const promise = auth.createUserWithEmailAndPassword(i.value, p.value) .then(function(result) {
+    // result.user.tenantId should be ‘TENANT_PROJECT_ID’.
+	
+var nuser = firebase.auth().currentUser;
 
-        firebase.database().ref("Private/Users/" + m.value + "/").set({
-            name: n.value,
-            email: i.value,
-            password: p.value,
-            birth: d.value,
-            gender: gen
+if (nuser != null) {
+	   firebase.database().ref("Private/Users/" + nuser.uid + "/UserData/").set({
+            Name: n.value,
+            Email: i.value,
+            Birth: d.value,
+			  EmailVerified : nuser.emailVerified,
+			 UID:nuser.uid, 
+            Gender: gen
         });
+	alert("Success");
+}
+  }).catch(function(error) {
+    // Handle error.
+	alert("Error"+error.message);
+  })
+
+
+     
     }
 
 }
