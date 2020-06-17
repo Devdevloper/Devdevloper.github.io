@@ -1,0 +1,129 @@
+body {
+    /* background-image: url("log.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    box-shadow: 0 28px 35px 0 black;
+    transition: 0.3s;
+    height: 500px;
+    width: 40%;
+    margin-left: 450px;
+    margin-right: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.Head {
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    color: black;
+    font-weight: bolder;
+}
+
+.form1 {
+    /* margin-left: 30px;*/
+    padding: 3.5em 3em;
+}
+
+#user::placeholder,
+#pas::placeholder {
+    color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+label {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgb(238, 231, 231);
+    font-weight: bold;
+    font-size: larger;
+}
+
+input[type=text],
+input[type=password] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: 0 5px 7px rgba(11, 12, 12, 0.3);
+    -moz-box-shadow: 0 5px 7px rgba(13, 14, 15, 0.3);
+    box-shadow: 0 5px 7px rgba(6, 7, 8, 0.3);
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 255px;
+    margin-top: 5px;
+    margin-right: 200px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: medium;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #0db5e9), var(--c2, #0b08c5) 51%, var(--c1, #1898ca)) var(--x, 0)/ 200%;
+    color: white;
+    -webkit-box-shadow: 0 5px 7px rgba(11, 12, 12, 0.3);
+    -moz-box-shadow: 0 5px 7px rgba(13, 14, 15, 0.3);
+    box-shadow: 0 5px 7px rgba(6, 7, 8, 0.3);
+}
+
+.btn:hover {
+    /*background-color: chartreuse;*/
+    --x: 100%;
+}
+
+.forget {
+    color: rgba(2, 4, 100, 0.973);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.forget:hover:not(.active) {
+    color: rgb(14, 12, 12);
+}
+
+.btn2 {
+    width: 100px;
+    height: 50px;
+    margin-left: 325px;
+    margin-top: 50px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: medium;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #f50511), var(--c2, #e6ab0b) 51%, var(--c1, #ee8206)) var(--x, 0)/ 200%;
+    color: white;
+    -webkit-box-shadow: 0 5px 7px rgba(11, 12, 12, 0.3);
+    -moz-box-shadow: 0 5px 7px rgba(13, 14, 15, 0.3);
+    box-shadow: 0 5px 7px rgba(6, 7, 8, 0.3);
+}
+
+.btn2:hover {
+    /*background-color: chartreuse;*/
+    --x: 100%;
+}
+
+@media only screen and (max-width: 100px) {
+    .card {
+        width: 8.33%;
+    }
+    #user,
+    #pas {
+        width: 10%;
+    }
+}

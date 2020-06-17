@@ -3,28 +3,56 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="To1.css" />
-    <title>Heart.com</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title> form</title>
+    <link rel="stylesheet" href="for.css" />
+    <script src="form.js"></script>
 </head>
 
 <body>
-    <div class="flex-container">
-        <div class="unit">
-            <div class="heart">
-                <div class="heart-piece-0"></div>
-                <div class="heart-piece-1"></div>
-                <div class="heart-piece-2"></div>
-                <div class="heart-piece-3"></div>
-                <div class="heart-piece-4"></div>
-                <div class="heart-piece-5"></div>
-                <div class="heart-piece-6"></div>
-                <div class="heart-piece-7"></div>
-                <div class="heart-piece-8"></div>
-            </div>
-            <p>Devesh Vaidya</p>
+    <div class="card">
+        <h2 class="Head">Login Form</h2>
+        <form action="/" class="form1">
+            <label for="Username"> Username</label>
+            <input type="text" id="user" placeholder="Enter Username" name="Username" required>
+            <label for="pass"><span>P</span>assword</label>
+            <input type="password" id="pas" placeholder="Enter Password" name="pass" required><br>
+            <input type="checkbox" id="sho" onclick="show()" style="margin-left: 10px; " /><b>Show password</b>
+        </form>
+        <div>
+            <input type="submit" value="Login" id="log" onclick="log()" class="btn">
+            <a class="forget" onclick="forget()">Forget Password</a>
+            <input type="submit" value="SignUp" onclick="sign()" class="btn2">
         </div>
+
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCf9ykEI2UyZZSy6Dbs3tulwbSlDkyryfs",
+            authDomain: "fir-6fe10.firebaseapp.com",
+            databaseURL: "https://fir-6fe10.firebaseio.com",
+            projectId: "fir-6fe10",
+            storageBucket: "fir-6fe10.appspot.com",
+            messagingSenderId: "80895933927",
+            appId: "1:80895933927:web:fe63e600e9f0c8fcaad142",
+            measurementId: "G-ZTZ2498BHZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
 
 </html>

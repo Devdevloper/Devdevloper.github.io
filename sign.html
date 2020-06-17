@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> form</title>
+    <link rel="stylesheet" href="up.css" />
+    <script src="signup.js"></script>
+
+</head>
+
+<body>
+    <div class="card">
+        <h2 class="us">Sign up form</h2>
+        <h3 class="de">Details</h3>
+        <form action="/" id="form1" name="myform">
+            <input type="text" id="name" placeholder="Enter Full Name" pattern="[A-Za-z]{30}" title="Enter valid data..." required/>
+            <input type="email" id="mob" name="email" placeholder="Enter Email id..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+            <input type="tel" id="mob1" name="phone" placeholder="Enter mobile number..." pattern="[0-9]{3}[0-9]{4}[0-9]{3}" />
+            <input type="password" id="pass" name="pwd" placeholder="New password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+            <input type="checkbox" id="sho" onclick="show()" style="margin-left: 10px;" /><b>Show password</b>
+            <label for="birthday">Birthday : </label>
+            <input type="date" id="birthday" required/>
+        </form>
+        <form>
+            <label for="Gender" id="gen" style="margin-left: 50px;">Gender : </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" value="male" required/>Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" value="female" required/>Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" value="other" required/>Other
+            </label>
+        </form>
+        <div align=center>
+            <a href="#" value="SignUp" id="button" class="btn" onclick="card()">SignUp</a>
+
+        </div>
+        <footer class="foot">Learners</footer>
+        <div id="Get">
+            <h2><span style="color: rgb(103, 235, 15);">G</span>et Registered With <span style="color: rgb(8, 132, 235);">Us...</span></h2>
+        </div>
+    </div>
+    <div class="bg-modal">
+        <div class="modal-contents">
+            <div class="close">+</div>
+            <div>
+                <a href="#" class="btn2" id="btn" onclick="sign()">Thank You</a><br>
+                <img src="lg2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCf9ykEI2UyZZSy6Dbs3tulwbSlDkyryfs",
+            authDomain: "fir-6fe10.firebaseapp.com",
+            databaseURL: "https://fir-6fe10.firebaseio.com",
+            projectId: "fir-6fe10",
+            storageBucket: "fir-6fe10.appspot.com",
+            messagingSenderId: "80895933927",
+            appId: "1:80895933927:web:fe63e600e9f0c8fcaad142",
+            measurementId: "G-ZTZ2498BHZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
+</html>
