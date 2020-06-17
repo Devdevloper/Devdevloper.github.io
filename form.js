@@ -21,6 +21,11 @@ ref.once("value")
   .then(function(snapshot) {
     namehere = snapshot.child("Name").val();
 				            alert("Login Success\nHi "+namehere);
+							
+							
+							
+							
+							
 
   });
 	
@@ -35,7 +40,7 @@ ref.once("value")
 			
 		}).catch(function(error) {
     // Handle error.
-	alert("Error"+error.message);
+	alert(error.message);
   })
   
   
