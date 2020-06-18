@@ -15,7 +15,7 @@ body {
     margin-top: 10px;
     height: 660px;
     margin-bottom: 15px;
-    width: 35%;
+    max-width: 35%;
 }
 
 .us {
@@ -40,7 +40,7 @@ body {
 }
 
 input[type=text] {
-    width: 450px;
+    max-width: 450px;
     padding: 12px 20px;
     margin: 10px 0;
     display: inline-block;
@@ -52,7 +52,7 @@ input[type=text] {
 }
 
 input[type=email] {
-    width: 450px;
+    max-width: 450px;
     padding: 12px 20px;
     margin: 10px 0;
     display: inline-block;
@@ -64,7 +64,7 @@ input[type=email] {
 }
 
 input[type=tel] {
-    width: 450px;
+    max-width: 450px;
     padding: 12px 20px;
     margin: 10px 0;
     display: inline-block;
@@ -83,7 +83,7 @@ input[type=tel] {
 }
 
 input[type=password] {
-    width: 350px;
+    max-width: 350px;
     padding: 12px 20px;
     margin: 10px 0px;
     margin-right: 90px;
@@ -102,7 +102,7 @@ b {
 }
 
 input[type=date] {
-    width: 225px;
+    max-width: 225px;
     padding: 12px 20px;
     margin: 15px 10px;
     margin-right: 100px;

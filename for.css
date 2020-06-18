@@ -8,9 +8,9 @@ body {
     box-shadow: 0 28px 35px 0 black;
     transition: 0.3s;
     height: 500px;
-    width: 40%;
+    min-width: 40%;
     margin-left: 450px;
-    margin-right: 50px;
+    margin-right: 450px;
     margin-top: 50px;
     position: relative;
 }
@@ -88,6 +88,7 @@ input[type=password] {
     margin-top: 50px;
     font-size: 16px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .forget:hover:not(.active) {
@@ -118,12 +119,40 @@ input[type=password] {
     --x: 100%;
 }
 
-@media only screen and (max-width: 100px) {
-    .card {
-        width: 8.33%;
+@media all and (max-width: 900px) {
+    body {
+        overflow: hidden;
     }
-    #user,
-    #pas {
-        width: 10%;
+    .Head {
+        text-align: center;
+        font-size: medium;
+    }
+    .card {
+        left: -430px;
+        width: 90%;
+        right: 0%;
+    }
+    input[type=text],
+    input[type=password] {
+        width: 85%;
+        padding: 10px 18px;
+    }
+    .form1 {
+        padding: 2em 1.5em;
+    }
+    label {
+        font-size: medium;
+    }
+    .btn {
+        margin-left: 40%;
+        margin-right: 100%;
+        margin-bottom: 29%;
+    }
+    .btn2 {
+        margin-top: -15%;
+    }
+    .forget {
+        font-size: 85%;
+        margin-top: 10em;
     }
 }
