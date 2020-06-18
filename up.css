@@ -347,39 +347,34 @@ img {
         right: -10%;
     }
     .de {
-        margin-bottom: -30px;
+        margin-bottom: -50px;
     }
     input[type=text] {
         margin-top: -50px;
-        width: 85%;
+        width: 100%;
         padding: 10px 18px;
-        margin-left: 27px;
     }
     input[type=password] {
-        width: 85%;
+        width: 100%;
         padding: 10px 18px;
-        margin-left: 27px;
     }
     input[type=email],
     input[type=tel] {
-        width: 85%;
+        width: 100%;
         padding: 10px 18px;
-        margin-left: 27px;
     }
     /*.birth {
         visibility: hidden;
     }*/
     input[type=date] {
-        width: 85%;
+        width: 100%;
         margin-top: 0px;
         padding: 10px 15px;
-        margin-left: 27px;
         margin-bottom: -60px;
     }
     input[type=checkbox] {
         margin-left: 5px;
         margin-bottom: 10px;
-        margin-left: 27px;
     }
     b {
         font-size: small;
@@ -394,8 +389,9 @@ img {
     }
     input[type=radio],
     #gen {
-        margin: -20em 0em;
+        margin: 0em 0em;
         margin-bottom: 30px;
+        margin-left: -20px;
     }
     .btn {
         margin-left: 40%;
@@ -407,7 +403,7 @@ img {
     }
     #Get {
         margin-left: 10px;
-        margin-top: 65px;
+        margin-top: 75px;
         font-size: 1em;
     }
 }
