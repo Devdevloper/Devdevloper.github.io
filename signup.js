@@ -1,3 +1,5 @@
+var isFirebaseInitialized = false;
+
 function card() {
     initFB();
     const n = document.getElementById("name");

@@ -4,6 +4,12 @@ body {
     background-size: cover;
 }
 
+.img {
+    width: 8%;
+    height: 10%;
+    margin-top: -3em;
+}
+
 .card {
     box-shadow: 0 28px 35px 0 black;
     transition: 0.3s;
@@ -191,6 +197,7 @@ input[type=password] {
     }
     .btn2 {
         margin-top: -15%;
+        margin-left: 170px;
     }
     .forget {
         font-size: 85%;
