@@ -353,15 +353,18 @@ img {
         margin-top: -50px;
         width: 100%;
         padding: 10px 18px;
+        margin-left: -30px;
     }
     input[type=password] {
         width: 100%;
         padding: 10px 18px;
+        margin-left: -30px;
     }
     input[type=email],
     input[type=tel] {
         width: 100%;
         padding: 10px 18px;
+        margin-left: -30px;
     }
     /*.birth {
         visibility: hidden;
@@ -371,14 +374,16 @@ img {
         margin-top: 0px;
         padding: 10px 15px;
         margin-bottom: -60px;
+        margin-left: -30px;
     }
     input[type=checkbox] {
         margin-left: 5px;
         margin-bottom: 10px;
+        margin-left: -30px;
     }
     b {
         font-size: small;
-        margin-right: 150px;
+        margin-right: 230px;
     }
     #form1 {
         padding: 2em 1.5em;
@@ -386,12 +391,13 @@ img {
     label {
         font-size: small;
         font-weight: bold;
+        margin-left: -30px;
     }
     input[type=radio],
     #gen {
-        margin: 0em 0em;
+        margin: 0em 0.5em;
         margin-bottom: 30px;
-        margin-left: -20px;
+        margin-left: -30px;
     }
     .btn {
         margin-left: 40%;
@@ -399,7 +405,7 @@ img {
     }
     .foot {
         text-align: center;
-        margin-top: 15px;
+        margin-top: 35px;
     }
     #Get {
         margin-left: 10px;
