@@ -1,20 +1,9 @@
-{
-    var firebaseConfig = {
-        apiKey: "AIzaSyCf9ykEI2UyZZSy6Dbs3tulwbSlDkyryfs",
-        authDomain: "fir-6fe10.firebaseapp.com",
-        databaseURL: "https://fir-6fe10.firebaseio.com",
-        projectId: "fir-6fe10",
-        storageBucket: "fir-6fe10.appspot.com",
-        messagingSenderId: "80895933927",
-        appId: "1:80895933927:web:fe63e600e9f0c8fcaad142",
-        measurementId: "G-ZTZ2498BHZ"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-}
+var isFirebaseInitialized = false;
 
 function log() {
+
+    initFB();
+
     const auth = firebase.auth();
     var u = document.getElementById("user");
     var p = document.getElementById("pas");
@@ -56,6 +45,29 @@ function log() {
 /* document.write(u);
  document.write("<br>");
  document.write(p);*/
+
+function initFB() {
+
+    if (!isFirebaseInitialized) {
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyCf9ykEI2UyZZSy6Dbs3tulwbSlDkyryfs",
+            authDomain: "fir-6fe10.firebaseapp.com",
+            databaseURL: "https://fir-6fe10.firebaseio.com",
+            projectId: "fir-6fe10",
+            storageBucket: "fir-6fe10.appspot.com",
+            messagingSenderId: "80895933927",
+            appId: "1:80895933927:web:fe63e600e9f0c8fcaad142",
+            measurementId: "G-ZTZ2498BHZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        isFirebaseInitialized = true;
+    }
+
+}
 
 
 
