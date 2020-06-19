@@ -465,11 +465,11 @@ img {
         visibility: hidden;
     }*/
     input[type=date] {
-        width: 100%;
-        margin-top: auto;
+        width: 40%;
+        margin-top: -2em;
         padding: 10px 15px;
         margin-left: auto;
-        margin-right: -30%;
+        margin-right: auto;
         display: inline-block;
         justify-content: space-around;
     }
@@ -504,18 +504,10 @@ img {
         display: block;
         justify-content: space-around;
     }
-    input[type=radio],
+    input[typpe=radio],
     #gen {
-        margin: 0em 0.5em;
         display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-around;
-        margin-top: 3em;
-        margin-left: 0em;
-    }
-    input[type=radio]:nth-child(1) {
-        margin-left: 1em;
+        float: inline-start;
     }
     .btn {
         margin-left: auto;
