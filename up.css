@@ -425,12 +425,15 @@ img {
 @media all and (max-width: 900px) {
     body {
         overflow: hidden;
+        scroll-behavior: auto;
     }
     .card {
         display: block;
+        box-sizing: border-box;
         margin-right: auto;
         margin-left: auto;
         width: 90%;
+        margin-bottom: 0em;
     }
     .de {
         margin-bottom: -50px;
@@ -507,7 +510,7 @@ img {
     input[typpe=radio],
     #gen {
         display: inline-block;
-        float: inline-start;
+        float: left;
     }
     .btn {
         margin-left: auto;
