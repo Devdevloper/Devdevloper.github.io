@@ -162,7 +162,6 @@ input[type=password] {
         width: 50%;
         margin-left: 27%;
         margin-right: 0px;
-        margin-top: auto;
     }
     input[type=text],
     input[type=password] {
@@ -207,7 +206,7 @@ input[type=password] {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: auto;
+        margin-bottom: 0em;
     }
     input[type=text],
     input[type=password] {
@@ -241,7 +240,6 @@ input[type=password] {
         margin-top: 10em;
     }
     .foot {
-        margin-top: 1em;
-        margin-bottom: 0em;
+        visibility: hidden;
     }
 }
