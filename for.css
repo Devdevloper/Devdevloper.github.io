@@ -199,8 +199,8 @@ input[type=password] {
     .card {
         display: block;
         box-sizing: border-box;
-        width: 80%;
-        margin-left: 200px;
+        width: 90%;
+        margin-left: 175px;
         margin-right: 0px;
     }
     input[type=text],
@@ -235,6 +235,7 @@ input[type=password] {
         margin-top: 10em;
     }
     .foot {
+        margin-top: 1em;
         margin-bottom: 0em;
     }
 }
