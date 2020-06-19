@@ -157,9 +157,11 @@ input[type=password] {
         font-size: medium;
     }
     .card {
-        left: -150px;
+        display: block;
+        box-sizing: border-box;
         width: 50%;
-        right: 0%;
+        margin-left: 27%;
+        margin-right: 0px;
     }
     input[type=text],
     input[type=password] {
@@ -172,19 +174,21 @@ input[type=password] {
     label {
         font-size: medium;
     }
-    /* .btn {
-        margin-top: 0%;
-        margin-left: 40%;
-        margin-right: 100%;
-        margin-bottom: 25%;
-    }*/
     .btn2 {
-        margin-left: 80%;
-        margin-top: -25%;
+        display: inline-block;
+        float: right;
+        margin-left: auto;
+        margin-top: 110px;
     }
     .forget {
+        display: inline-block;
+        float: left;
         font-size: 85%;
         margin-top: 10em;
+    }
+    .foot {
+        margin-top: 1em;
+        margin-bottom: 0em;
     }
 }
 
@@ -200,8 +204,8 @@ input[type=password] {
         display: block;
         box-sizing: border-box;
         width: 90%;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
     input[type=text],
     input[type=password] {
