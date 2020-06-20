@@ -469,9 +469,9 @@ img {
     }*/
     input[type=date] {
         width: 40%;
-        margin-top: -2em;
+        margin-top: -2.5em;
         padding: 10px 15px;
-        margin-left: auto;
+        margin-left: 80px;
         margin-right: auto;
         display: inline-block;
         justify-content: space-around;
@@ -507,10 +507,10 @@ img {
         display: block;
         justify-content: space-around;
     }
-    input[typpe=radio],
     #gen {
         display: inline-block;
-        float: left;
+        margin-right: -10em;
+        margin-right: auto;
     }
     .btn {
         margin-left: auto;
