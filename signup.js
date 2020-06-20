@@ -5,16 +5,11 @@ function card() {
     const n = document.getElementById("name");
     const i = document.getElementById("mob");
     const p = document.getElementById("pass");
-    const d = document.getElementById("birthday");
-    const m = document.getElementById("mob1");
-    const g = document.getElementsByName("optradio");
-    let gen = '';
-    let j;
 
-    for (j = 0; j < g.length; j++) {
-        if (g[j].checked) { gen = g[j].value; }
-    }
-    if (n.value == '' || m.value == '' || p.value == '' || d.value == '' || gen == '') {
+    const m = document.getElementById("mob1");
+
+
+    if (n.value == '' || m.value == '' || p.value == '') {
 
         alert("Please enter your credentials...");
 
@@ -37,10 +32,10 @@ function card() {
                 firebase.database().ref("Private/Users/" + nuser.uid + "/UserData/").set({
                     Name: n.value,
                     Email: i.value,
-                    Birth: d.value,
+
                     EmailVerified: nuser.emailVerified,
                     UID: nuser.uid,
-                    Gender: gen
+
                 });
                 alert("Success");
             }
