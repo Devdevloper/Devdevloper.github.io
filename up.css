@@ -13,10 +13,11 @@ body {
     background-color: white;
     box-shadow: 0 25px 30px 0 black;
     transition: 0.3s;
-    margin-top: 70px;
+    margin-top: 130px;
+    margin-bottom: auto;
     display: block;
     margin-right: auto;
-    height: 580px;
+    height: 500px;
     width: 35%;
 }
 
@@ -133,32 +134,6 @@ input [type=checkbox] {
     justify-content: space-around;
 }
 
-.birth {
-    margin-left: auto;
-    display: inline-block;
-    justify-content: space-around;
-    margin-bottom: 0em;
-}
-
-input[type=date] {
-    width: 225px;
-    padding: 12px 20px;
-    margin: 5px 10px;
-    margin-right: auto;
-    display: inline-block;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    border-radius: 25px;
-    box-sizing: border-box;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    -webkit-box-shadow: 0 7px 9px rgba(11, 12, 12, 0.3);
-    -moz-box-shadow: 0 7px 9px rgba(13, 14, 15, 0.3);
-    box-shadow: 0 7px 9px rgba(6, 7, 8, 0.3);
-}
-
 label {
     color: darkorange;
     margin-left: 10px;
@@ -167,32 +142,13 @@ label {
     font-weight: bolder;
 }
 
-#gen {
-    margin-left: -5em;
-    display: inline-block;
-    justify-content: start;
-    margin-right: 1em;
-}
-
-input[type=radio] {
-    margin: 0em 0.5em;
-    margin-left: auto;
-    display: inline-block;
-    justify-content: space-around;
-    margin-bottom: auto;
-}
-
-input[type=radio]:nth-child(1) {
-    margin-left: -0.5em;
-}
-
 .btn {
     width: 60px;
     text-decoration: none;
     padding: 12px 20px 17px 20px;
     height: 20px;
     margin-left: auto;
-    margin-top: auto;
+    margin-top: 65px;
     margin-right: auto;
     display: block;
     justify-content: space-around;
@@ -219,7 +175,7 @@ input[type=radio]:nth-child(1) {
     text-align: center;
     color: black;
     font-family: magneto;
-    margin-top: 60px;
+    margin-top: 70px;
     font-weight: bold;
 }
 
@@ -346,22 +302,6 @@ img {
         display: inline-block;
         justify-content: space-around;
     }
-    .birth {
-        display: inline-block;
-        margin-left: auto;
-        margin-top: auto;
-        justify-content: space-around;
-        margin-bottom: 0em;
-    }
-    input[type=date] {
-        width: 25%;
-        padding: 10px 15px;
-        margin: -2em 150px;
-        margin-left: 8%;
-        display: inline-block;
-        justify-content: space-around;
-        position: absolute;
-    }
     input[type=checkbox] {
         margin-left: auto;
         margin-right: auto;
@@ -389,24 +329,6 @@ img {
         display: inline-block;
         justify-content: space-around;
     }
-    .birth {
-        margin-left: auto;
-        display: block;
-        justify-content: space-around;
-    }
-    input[type=radio],
-    #gen {
-        margin: 0em 1em;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-around;
-        margin-top: 3em;
-        margin-left: auto;
-    }
-    input[type=radio]:nth-child(1) {
-        margin-left: 1em;
-    }
     .btn {
         margin-left: auto;
         margin-right: auto;
@@ -430,10 +352,14 @@ img {
     .card {
         display: block;
         box-sizing: border-box;
+        margin-top: 80px;
         margin-right: auto;
         margin-left: auto;
         width: 90%;
         margin-bottom: 0em;
+    }
+    img {
+        margin-top: -4em;
     }
     .de {
         margin-bottom: -50px;
@@ -464,18 +390,6 @@ img {
         display: inline-block;
         justify-content: space-around;
     }
-    /*.birth {
-        visibility: hidden;
-    }*/
-    input[type=date] {
-        width: 40%;
-        margin-top: -2.5em;
-        padding: 10px 15px;
-        margin-left: 80px;
-        margin-right: auto;
-        display: inline-block;
-        justify-content: space-around;
-    }
     input[type=checkbox] {
         margin-left: auto;
         margin-right: auto;
@@ -501,16 +415,6 @@ img {
         margin-right: auto;
         display: inline-block;
         justify-content: space-around;
-    }
-    .birth {
-        margin-left: auto;
-        display: block;
-        justify-content: space-around;
-    }
-    #gen {
-        display: inline-block;
-        margin-right: -10em;
-        margin-right: auto;
     }
     .btn {
         margin-left: auto;
