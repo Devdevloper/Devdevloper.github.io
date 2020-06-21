@@ -559,6 +559,8 @@ p {
     }
     .services .box {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .stats {
         padding-top: 250px;
