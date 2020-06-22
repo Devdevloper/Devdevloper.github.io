@@ -138,14 +138,12 @@ span {
 
 @media(max-width: 992px) {
     body {
+        background-size: auto;
         overflow: hidden;
-        background-size: cover;
-        scroll-behavior: auto;
     }
     .form-box {
         margin: auto;
-        margin-left: 50px;
-        margin-right: 50px;
         display: block;
+        width: 320px;
     }
 }
