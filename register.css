@@ -146,4 +146,10 @@ span {
         display: block;
         width: 320px;
     }
+    #Log-in {
+        left: 25px;
+    }
+    #register {
+        left: 425px;
+    }
 }
