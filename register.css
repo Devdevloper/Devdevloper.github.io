@@ -27,7 +27,8 @@ body {
     width: 380px;
     height: 480px;
     position: relative;
-    margin: auto;
+    display: block;
+    margin: -5% auto;
     background: #fff;
     padding: 5px;
     box-shadow: 0 25px 30px 0 black;
@@ -138,6 +139,7 @@ span {
 @media(max-width: 992px) {
     body {
         background-size: auto;
+        scroll-behavior: auto;
     }
     .form-box {
         margin: auto;
