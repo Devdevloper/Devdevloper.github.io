@@ -143,6 +143,8 @@ span {
     }
     .form-box {
         margin: auto;
+        margin-left: 50px;
+        margin-right: 50px;
         display: block;
     }
 }
