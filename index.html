@@ -22,23 +22,35 @@
                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
             </div>
             <form id="Log-in" class="input-group">
-                <input type="text" class="input-field" placeholder="UserName">
-                <input type="text" class="input-field" placeholder="PassWord">
-                <input type="checkbox" class="check-box"><span>Show Password</span>
-                <button type="submit" class="submit-btn">Log In</button>
+                <input type="text" class="input-field" id="user" placeholder="UserName">
+                <input type="password" class="input-field" id="pas" placeholder="PassWord">
+                <input type="checkbox" class="check-box" onclick="show()"><span>Show Password</span>
+                <button type="submit" class="submit-btn" onclick="log()">Log In</button>
             </form>
             <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="Full Name">
-                <input type="text" class="input-field" placeholder="Email Id">
-                <input type="text" class="input-field" placeholder="PassWord">
-                <input type="checkbox" class="check-box"><span>Show Password</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <input type="text" id="name" class="input-field" placeholder="Full Name">
+                <input type="text" id="use" class="input-field" placeholder="Email Id">
+                <input type="password" id="pass" class="input-field" placeholder="PassWord">
+                <input type="checkbox" class="check-box" onclick="showp()"><span>Show Password</span>
+                <button type="submit" class="submit-btn" onclick="card()">Register</button>
                 <!-- <input type="checkbox" class="check-box2"><span class="policy">I agree to the <a href="#">Terms & conditions</a></span>-->
             </form>
             <footer class="foot"><a href="#">Terms & Conditions</a></footer>
         </div>
     </div>
+    <div class="forget">
+        <a href="#" onclick="forget()">forget password</a>
+    </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
     <script>
     </script>
 </body>

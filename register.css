@@ -120,6 +120,21 @@ span {
     margin-right: 30%;
 }
 
+.forget {
+    margin-top: 100px;
+}
+
+.forget a {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    text-decoration: none;
+}
+
 
 /*.policy {
     color: #777;
@@ -137,7 +152,10 @@ span {
 }
 
 @media(max-width: 1200px) {
-    body {}
+    body {
+        overflow: hidden;
+        background-size: auto;
+    }
     .form-box {
         margin: auto;
         display: block;
@@ -148,6 +166,9 @@ span {
     }
     #register {
         left: 450px;
+    }
+    .forget {
+        margin-top: 12px;
     }
 }
 
@@ -166,5 +187,8 @@ span {
     }
     #register {
         left: 425px;
+    }
+    .forget {
+        margin-top: 12px;
     }
 }
