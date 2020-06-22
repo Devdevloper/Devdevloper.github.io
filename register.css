@@ -5,7 +5,11 @@
     font-family: 'Poppins', sans-serif;
     overflow: visible;
 }
-
+body{
+	background: linear-gradient(to top, #000428, #004e92);
+    background-size:cover;
+	min-height:800px;
+}
 .hero .logo img {
     position: relative;
     width: 10%;
@@ -15,17 +19,13 @@
 .hero {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to top, #000428, #004e92);
-    position: absolute;
-    background-size: cover;
-    background-position: center;
 }
 
 .form-box {
     width: 380px;
     height: 480px;
     position: relative;
-    margin: -5% auto;
+    margin:  auto;
     background: #fff;
     padding: 5px;
     box-shadow: 0 25px 30px 0 black;
@@ -134,6 +134,9 @@ span {
 }
 
 @media(max-width: 992px) {
+	body{
+		min-height:580px;
+	}
     .form-box {
         margin: auto;
     }
