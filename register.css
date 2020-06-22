@@ -137,9 +137,7 @@ span {
 }
 
 @media(max-width: 1200px) {
-    body {
-        background-size: cover;
-    }
+    body {}
     .form-box {
         margin: auto;
         display: block;
