@@ -1,0 +1,140 @@
+@import url("https://www.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: visible;
+}
+
+.hero .logo img {
+    position: relative;
+    width: 10%;
+    height: 10%;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #000428, #004e92);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: -5% auto;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 25px 30px 0 black;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #cc2b5e, #6dd5ed);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input-group {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #000428;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #cc2b5e, #6dd5ed);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+
+/*.check-box2 {
+    margin: 30px 10px 30px 0;
+}*/
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 65px;
+    position: absolute;
+}
+
+.foot {
+    color: #000428;
+    font-size: 12px;
+    top: 90%;
+    bottom: 0px;
+    position: absolute;
+    margin-left: 33%;
+    margin-right: 30%;
+}
+
+
+/*.policy {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}*/
+
+#Log-in {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+@media(max-width: 992px) {
+    .form-box {
+        margin: auto;
+    }
+}
