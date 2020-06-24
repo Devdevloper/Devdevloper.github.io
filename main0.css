@@ -1,0 +1,128 @@
+@import url("https://www.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*background: linear-gradient(to right, #1488cc, #2b32b2);*/
+    /*background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);*/
+    /*background: linear-gradient(to right, #b92b27, #1565c0);*/
+    background-image: url("b2.jpg");
+    min-height: 1000px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    z-index: 1000;
+    transition: 0.6s;
+}
+
+header .logo {
+    position: relative;
+    height: 18%;
+    width: 8%;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+header ul li a:hover {
+    background-color: #fff;
+    color: #00a2ff;
+    border-radius: 10px;
+}
+
+.sec {
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content {
+    position: relative;
+    text-align: justify;
+    width: 100%;
+    color: #fff;
+}
+
+.mxw800p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #6dd5fa;
+}
+
+p {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.content a {
+    padding: 12px;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    transition: 0.8s;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: #00a2ff;
+}

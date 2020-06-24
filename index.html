@@ -1,58 +1,34 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Registration</title>
-    <link rel="stylesheet" href="register.css" />
-    <script src="type.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Copatible" content="ie=edge">
+    <link rel="stylesheet" href="main0.css">
+    <title>DeV Learners</title>
+    <script src="get.js"></script>
 </head>
 
 <body>
-
-    <div class="hero">
-        <div class="logo">
-            <img src="lg2.jpg" alt="">
-        </div>
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div>
-            <form id="Log-in" class="input-group">
-                <input type="text" class="input-field" id="user" placeholder="UserName">
-                <input type="password" class="input-field" id="pas" placeholder="PassWord">
-                <input type="checkbox" class="check-box" onclick="show()"><span>Show Password</span>
-                <button type="submit" class="submit-btn" onclick="log()">Log In</button>
-            </form>
-            <form id="register" class="input-group">
-                <input type="text" id="name" class="input-field" placeholder="Full Name">
-                <input type="text" id="use" class="input-field" placeholder="Email Id">
-                <input type="password" id="pass" class="input-field" placeholder="PassWord">
-                <input type="checkbox" class="check-box" onclick="showp()"><span>Show Password</span>
-                <button type="submit" class="submit-btn" onclick="card()">Register</button>
-                <!-- <input type="checkbox" class="check-box2"><span class="policy">I agree to the <a href="#">Terms & conditions</a></span>-->
-            </form>
-            <footer class="foot"><a href="#">Terms & Conditions</a></footer>
-        </div>
-    </div>
-    <div class="forget">
-        <a href="#" onclick="forget()">forget password?</a>
-    </div>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
-
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
-    <script>
-    </script>
-</body>
-
+    <header>
+        <img src="lg2.jpg" class="logo" alt="logo">
+        <ul>
+            <li><a onclick="register()">Register</a></li>
+        </ul>
+    </header>
+    <section class="sec">
+        <div class="mxw800p">
+            <div class="content">
+                <h2>Welcome to our Learners Academy</h2>
+                <h1>Accelerate your career with <span>DeV Learners<span></h1>
+         <p>An incredible opportunity is waiting for you.technology is changing
+            the world by connecting billions of devices and improving how we live,
+            work,play and treat our planet.No industry is immune.Are you ready to 
+	         change your life,and possibly make the world a better place?</p>
+        <a href="#">Get Started >>></a>
+       </div>
+       </div>
+    </section>
+   </body>
 </html>
