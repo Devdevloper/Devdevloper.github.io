@@ -127,8 +127,28 @@ h2 {
     color: #00a2ff;
 }
 
-@media all(max-width:992) {
+@media(max-width:992px) {
     body {
-        overflow: visible;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+    p {
+        position: relative;
+        font-size: 12px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    h2 {
+        font-size: 1.4em;
+        margin: 0;
+    }
+    .content a {
+        padding: 8px;
+        display: inline-block;
+        font-size: 12px;
     }
 }
