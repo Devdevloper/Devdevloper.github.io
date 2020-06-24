@@ -126,3 +126,9 @@ h2 {
     background-color: #fff;
     color: #00a2ff;
 }
+
+@media all(max-width:992) {
+    body {
+        overflow: visible;
+    }
+}
