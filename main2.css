@@ -413,7 +413,7 @@ p {
 }
 
 .sci ul {
-    display: flex;
+    display: block;
 }
 
 .sci ul li {
@@ -423,7 +423,7 @@ p {
 .sci ul li h4 {
     color: #fff;
     display: inline-block;
-    margin: 0 30px;
+    margin: 5px 30px;
 }
 
 
@@ -450,6 +450,9 @@ p {
 }
 
 @media(max-width: 992px) {
+    body {
+        overflow: auto;
+    }
     .toggle {
         display: block;
         position: relative;
@@ -461,7 +464,7 @@ p {
         content: '';
         position: absolute;
         top: 4px;
-        width: 100%;
+        width: 30px;
         height: 2px;
         background: #fff;
         z-index: 1;
@@ -472,7 +475,7 @@ p {
         content: '';
         position: absolute;
         bottom: 4px;
-        width: 100%;
+        width: 30px;
         height: 2px;
         background: #fff;
         z-index: 1;
@@ -487,7 +490,7 @@ p {
         position: absolute;
         top: 45px;
         left: 0;
-        width: 100%;
+        width: 90%;
         height: 100vh;
         text-align: center;
         overflow: auto;
@@ -510,7 +513,7 @@ p {
         color: #000;
     }
     .banner {
-        background-position: center;
+        background-position: cover;
     }
     .banner h2 {
         font-size: 60px;
