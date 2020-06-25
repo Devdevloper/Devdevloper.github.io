@@ -409,7 +409,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .sci ul {
@@ -423,7 +423,7 @@ p {
 .sci ul li h4 {
     color: #fff;
     display: inline-block;
-    margin: 5px 30px;
+    margin: 5px;
 }
 
 
@@ -537,7 +537,7 @@ p {
         margin: 0;
     }
     .sci {
-        margin: 20px;
+        margin: auto;
     }
     .sci ul li a img {
         font-size: 24px;
