@@ -10,7 +10,7 @@ body {
     /*background: linear-gradient(to right, #1488cc, #2b32b2);*/
     /*background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);*/
     /*background: linear-gradient(to right, #b92b27, #1565c0);*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("b2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("b2.jpg");
     min-height: 1000px;
     position: relative;
     background-size: cover;
