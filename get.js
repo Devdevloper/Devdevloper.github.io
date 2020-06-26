@@ -3,5 +3,5 @@ function register() {
 }
 
 function start() {
-    window.open("main2.html", "_self");
+    window.open("menu.html", "_self");
 }
