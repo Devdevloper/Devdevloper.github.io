@@ -360,6 +360,12 @@ input[type="checkbox"]:checked~section {
     .banner {
         background-position: center;
     }
+	.icon::before{
+		font-size:12px;
+	}
+	input[type="checkbox"]:checked~.icon::before{
+		font-size:12px;
+	}
 	.logo {
     position: fixed;
     left: 0px;
@@ -368,7 +374,7 @@ input[type="checkbox"]:checked~section {
     width: 25%;
 }
     .banner h2 {
-		left:-25px;
+		margin-left:-25px;
         font-size: 60px;
         padding-top: 0px;
         padding-right: 50px;
@@ -400,6 +406,12 @@ input[type="checkbox"]:checked~section {
     input[type="checkbox"]:checked~ul {
         left: -100%;
     }
+	.icon::before{
+		font-size:12px;
+	}
+	input[type="checkbox"]:checked~.icon::before{
+		font-size:12px;
+	}
     input[type="checkbox"] {
         z-index: 100001;
         outline: none;
@@ -424,7 +436,7 @@ input[type="checkbox"]:checked~section {
     width: 25%;
 }
     .banner h2 {
-		left:-25px;
+		margin-left:-25px;
         font-size: 60px;
         padding-top: 0px;
         padding-right: 50px;
@@ -433,7 +445,7 @@ input[type="checkbox"]:checked~section {
         padding: 100px 50px 50px 50px;
     }
     .features .box {
-        width: 90%;
+        width: 80%;
     }
     input[type="checkbox"]:checked~.icon {
         background: #000;
