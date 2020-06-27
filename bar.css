@@ -374,7 +374,7 @@ input[type="checkbox"]:checked~section {
     width: 25%;
 }
     .banner h2 {
-		margin-left:-25px;
+		margin-left:-35px;
         font-size: 60px;
         padding-top: 0px;
         padding-right: 50px;
@@ -436,7 +436,7 @@ input[type="checkbox"]:checked~section {
     width: 25%;
 }
     .banner h2 {
-		margin-left:-25px;
+		margin-left:-35px;
         font-size: 60px;
         padding-top: 0px;
         padding-right: 50px;
