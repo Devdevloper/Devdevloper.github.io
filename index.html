@@ -1,34 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Copatible" content="ie=edge">
-    <link rel="stylesheet" href="main0.css">
-    <title>DeV Learners</title>
-    <script src="get.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Some.css" />
+    <title>MYSITE</title>
 </head>
 
 <body>
-    <header>
-        <img src="logo2.png" class="logo" alt="logo">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <header id="header">
+        <a href="#team" class="logo">Dev</a>
         <ul>
-            <li><a onclick="register()">Register</a></li>
+            <li><a href="#home" onclick="toggle()">Home</a></li>
+            <li><a href="#about" onclick="toggle()">About</a></li>
+            <li><a href="#services" onclick="toggle()">Services</a></li>
+            <li><a href="#portfolio" onclick="toggle()">Portfolio</a></li>
+            <li><a href="#team" onclick="toggle()">Team</a></li>
+            <li><a href="#contact" onclick="toggle()">Contact</a></li>
         </ul>
+        <div class="toggle" onclick="toggle()"></div>
     </header>
-    <section class="sec">
-        <div class="mxw800p">
-            <div class="content">
-                <h2>Welcome to our Learners Academy</h2>
-                <h1>Accelerate your career with <span>DeV Learners<span></h1>
-         <p>An incredible opportunity is waiting for you.technology is changing
-            the world by connecting billions of devices and improving how we live,
-            work,play and treat our planet.No industry is immune.Are you ready to 
-	         change your life,and possibly make the world a better place?</p>
-        <a onclick="start()">Get Started >>></a>
-       </div>
-       </div>
+
+    <section class="banner" id="home">
+        <h2>I Work For <span>My Passion</span></h2>
     </section>
-   </body>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Who I AM?</h3>
+                <p>A computer programmer, sometimes called only programmer or more recently a coder (especially in more informal contexts). The term computer programmer can refer to a specialist in one area of computers,But I am not any specialist, I am
+                    just a student who knows some languages like C, C++, Java(My favourite one), HTML, CSS, JavaScript(A little), PHP(A little), Python(A little)etc. using which I am trying to make softwares, Websites etc.
+                </p>
+                <a href="#" class="btn">Read My Story</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec about" id="services">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>What I Do</h3>
+                <p>I am not a professional coder I am a student. As I said previously I am not a specialist just try to make websites and softwares as per my capability.</p>
+            </div>
+            <div class="services">
+                <div class="box">
+                    <div class="iconbx">
+                        <img src="icon1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Design</h2>
+                        <p>I am better in FrontEnd coding. I am mostly prefer to UI designing.Because of my best imagination power I can imagine the best UI regarding any software or any website and can make it possible.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconbx">
+                        <img src="icon2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Devlopment</h2>
+                        <p>There is no work which is impossible to do, So I can do development also.I am not best in Backend but can do any type of development.Because I am a student I am still learning about how to do backend coding</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconbx">
+                        <img src="icon3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Serving</h2>
+                        <p>As I said I am serving softwares and websites as per clients needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec stats">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Our Achievments</h3>
+                <p>I am developers and I work for you to make your life easier, I am makers of bright future.</p>
+            </div>
+            <div class="statsBox">
+                <div class="box">
+                    <h2>WORKING ON</h2>
+                    <h4>a Projects</h4>
+                </div>
+                <div class="box">
+                    <h2>STILL NO</h2>
+                    <h4>Happy Clients</h4>
+                </div>
+                <div class="box">
+                    <h2>1</h2>
+                    <h4>Country</h4>
+                </div>
+                <div class="box">
+                    <h2>NO</h2>
+                    <h4>Awards</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec work" id="portfolio">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Recent Work</h3>
+                <p>I am currently working on a website which was a surprise...Stay tuned
+                </p>
+            </div>
+            <div class="workBx">
+                <div class="Sites">
+                    <a href="#">
+                        <h2>Site Name</h2>
+                    </a>
+                </div>
+                <div class="Sites">
+                    <a href="#">
+                        <h2>Site Name</h2>
+                    </a>
+                </div>
+                <div class="Sites">
+                    <a href="#">
+                        <h2>Site Name</h2>
+                    </a>
+                </div>
+                <div class="Sites">
+                    <a href="#">
+                        <h2>Site Name</h2>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="sec work" id="team">
+        <div class="content">
+            <div class="mxw800p">
+                <h3 style="text-align:center">Face Behind This Devlopment</h3>
+                <p style="text-align: center;">The Whole And Sole About whome you are reading above is here.</p>
+            </div>
+            <div class="teamBx">
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="dev1.jpg" alt="img">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Devdeveloper <br><span>All In One</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec contact" id="contact">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Contact Us</h3>
+                <p>Always There For You</p>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <div class="row100">
+                        <div class="inputBx50">
+                            <input type="text" name="" placeholder="Full Name">
+                        </div>
+                        <div class="inputBx50">
+                            <input type="email" name="" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <textarea name="" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sci">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/devesh.vaidya.54"><img src="facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_._debu_._?r=nametag"><img src="instagram.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" onclick="twitter()"><img src="twitter.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">Design and Developed By <a href="#">DevDevelopers</a></p>
+
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function toggle() {
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+
+        function twitter() {
+            alert("Still Have no account...");
+        }
+        let progress = document.getElementById("progressbar");
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function() {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+
 </html>
