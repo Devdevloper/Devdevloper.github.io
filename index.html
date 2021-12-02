@@ -60,7 +60,7 @@
                 <div class="column right">
                     <div class="text">I'm Devesh and I'm a <span class="typing-2"></span></div>
                     <p>Hi! Myself Devesh Vaidya. I am from chopda, have completed diploma from SSPIT chopda and now pursuing degree from BVCOEL with major computer. I have a quite good knowledge of Java, C, C++, Web development and SQL. I am also a good content writer.</p>
-                    <a href="#">Read More</a>
+                    <a href="#popup1">Read More</a>
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
                     <p>I am a computer engineer also completed diploma in computer science. I have a quite good knowledge in C, C++, HTML, CSS, Java, JavaScript, SQL and also I am a good content writer.</p>
-                    <a href="#">Read more</a>
+                    <a href="#popup1">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -235,14 +235,18 @@
     </footer>
 
     <script src="script.js"></script>
-    <script type="text/javascript">
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop(),
-            dh = $(document).height(),
-            wh = $(window).height();
-            scrollPercent = (scroll/(dh-wh))*100;
-            $('#progressbar').css('height', scrollPercent + '%');
-        })
-    </script>
+
+    <!--Pop up box started-->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Hey!!!</h2>
+            <a class="close" href="#contact">&times;</a>
+            <div class="content">
+                If you wanna know more contact me :)
+            </div>
+        </div>
+    </div>
+    
+   
 </body>
 </html>
