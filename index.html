@@ -153,7 +153,18 @@
         <div class="content">
             <div class="mxw800p">
                 <p style="text-align:center; color: white; font-size: 30px;">Face Behind This Development</p>
-                <p style="text-align: center; color: white; font-size: 20px;letter-spacing:1mm;"><span class="typing-3" style="color: yellow;"></span></p>
+                <p style="text-align: center; color: white; font-size: 20px;letter-spacing:1mm;"><span class="typing-3" style="background-color: red;
+                    /* Create the gradient. */
+                    background-image: linear-gradient(to left,#fffc00, #ffffff); 
+                    /* Set the background size and repeat properties. */
+                    background-size: 100%;
+                    background-repeat: repeat;
+                    /* Use the text as a mask for the background. */
+                    /* This will show the gradient as a text color rather than element bg. */
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    -moz-background-clip: text;
+                    -moz-text-fill-color: transparent;"></span></p>
             </div>
             <div class="teamBx">
                 <div class="member">
@@ -178,7 +189,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>If there is any query or you need any help please contact me.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -247,6 +258,27 @@
         </div>
     </div>
     
-   
+    <!--Floating social media button started-->
+    <div class="fabs" onclick="toggleBtn()">
+        <div class="action">
+          <i class="fas fa-plus" id="add"></i>
+          <i class="fas fa-times" id="remove" style="display: none"></i>
+        </div>
+  
+        <div class="btns">
+          <a href="#" class="btn" 
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="btn" 
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="btn" 
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="#" class="btn" 
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
 </body>
 </html>

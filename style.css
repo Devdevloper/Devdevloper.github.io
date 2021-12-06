@@ -144,7 +144,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: black;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -206,7 +206,7 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: none;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -217,8 +217,9 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    background: linear-gradient(to left, #4568dc, #b06ab3);
+    color: white;
+    border: 2px solid transparent
 }
 
 /* about section styling */
@@ -243,7 +244,18 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    background-color: red;
+    /* Create the gradient. */
+    background-image: linear-gradient(to left, #4568dc, #b06ab3); 
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -280,9 +292,12 @@ section .title::after{
     content: "what i provide";
 }
 .services .serv-content .card{
+    display: flex;
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
+    align-items: center;
+  justify-content: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
@@ -315,6 +330,7 @@ section .title::after{
 
 .skills .title::after{
     content: "what i know";
+    
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -371,7 +387,7 @@ section .title::after{
     top: 0;
     transform: scaleX(0);
     transform-origin: left;
-    background: crimson;
+    background: linear-gradient(to left, #4568dc, #b06ab3);
     animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
     animation-iteration-count: infinite;
 }
@@ -420,6 +436,21 @@ section .title::after{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.typing{
+    background-color: red;
+    /* Create the gradient. */
+    background-image: linear-gradient(to left,#fceabb, #f8b500); 
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+   
 }
 
 .teamBx .member .imgBx {
@@ -780,3 +811,65 @@ footer span a:hover{
       width: 70%;
     }
   }
+
+  /*Floating social media button */
+  .fabs {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  .action {
+    background: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 7px 0px ;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .action i {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .action:hover {
+    background-color: crimson;
+  }
+  
+  .btn {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  
+  .btn i {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btns {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    transition: 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .btns.open {
+    bottom: 50px;
+  }
+  
