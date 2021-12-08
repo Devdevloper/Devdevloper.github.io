@@ -206,7 +206,7 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: none;
+    background: crimson;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -217,14 +217,13 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    background: linear-gradient(to left, #4568dc, #b06ab3);
-    color: white;
-    border: 2px solid transparent
+    background: none;
+    color: crimson;
 }
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -289,7 +288,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "what I provide";
 }
 .services .serv-content .card{
     display: flex;
@@ -329,7 +328,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "what I know";
     
 }
 .skills .skills-content .column{
@@ -505,7 +504,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);

@@ -89,3 +89,53 @@ function toggleBtn() {
       });
     }
   }
+
+  function sendEmail() {
+      let email = document.getElementById("mail");
+      let sub = document.getElementById("sub");
+      let msg = document.getElementById("sub");
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: email,
+      Password: "Enter your password",
+      To: 'deveshtv252000@gmail.com',
+      From: email,
+      Subject: sub,
+      Body: msg,
+    })
+      .then(function (message) {
+        alert("mail sent successfully")
+      });
+  }
+
+  function sendmail(){
+    
+    var name = $('#Name').val();
+    var email = $('#Sender').val();
+    var subject = $('#Subject').val();
+          var message = $('#Message').val();
+
+    // var body = $('#body').val();
+
+    var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+    //console.log(name, phone, email, message);
+
+    Email.send({
+      SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+      To: 'engineerdev4519@gmail.com',
+      From: email,
+      Subject: "New message on contact from "+name,
+      Body: Body
+    }).then(
+      message =>{
+        //console.log (message);
+        if(message=='OK'){
+        alert('Your mail has been send. Thank you for connecting.');
+        }
+        else{
+          console.error (message);
+          alert('There is error at sending message. ')	
+        }
+      }
+    );
+  }

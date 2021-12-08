@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
@@ -216,20 +217,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="javascript:sendmail()" method="post">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" id="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" id="Sender" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" id="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." id="Message" required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
@@ -244,8 +245,17 @@
     <footer>
         <span>Created By Dev | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
     </footer>
-
+    
     <script src="script.js"></script>
+    
+    <!--Contact Form backend started-->
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+ </script>
 
     <!--Pop up box started-->
     <div id="popup1" class="overlay">
@@ -266,16 +276,13 @@
         </div>
   
         <div class="btns">
-          <a href="#" class="btn" 
+          <a href="#" class="btn" style="background: black;"
             ><i class="fab fa-facebook-f"></i
           ></a>
-          <a href="#" class="btn" 
+          <a href="#" class="btn" style="background: black;"
             ><i class="fab fa-twitter"></i
           ></a>
-          <a href="#" class="btn" 
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <a href="#" class="btn" 
+          <a href="https://www.instagram.com/_.dev_vaidya._/?hl=en" class="btn" style="background: black;"
             ><i class="fab fa-instagram"></i
           ></a>
         </div>
