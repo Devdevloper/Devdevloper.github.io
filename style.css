@@ -1,6 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display Italic:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Magneto:wght@400;500;600;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/photograph-signature');
 
 *{
     margin: 0;
@@ -99,10 +99,10 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    font-family: "Magneto", sans-serif;
+    font-family: "Photograph Signature", sans-serif;
     color: #fff;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: bolder;
 }
 .navbar .logo a span{
     color: crimson;
