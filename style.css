@@ -27,7 +27,10 @@ html{
     background: #555;
 }
 
-
+@font-face {
+    font-family:myfont ;
+    src: url(Fonts/MeowScript-Regular.ttf);
+}
 /* all similar content styling codes */
 section{
     padding: 100px 0;
@@ -99,9 +102,9 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    font-family: "Photograph Signature", sans-serif;
+    font-family: myfont;
     color: #fff;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: bolder;
 }
 .navbar .logo a span{
@@ -387,8 +390,8 @@ section .title::after{
     transform: scaleX(0);
     transform-origin: left;
     background: linear-gradient(to left, #4568dc, #b06ab3);
-    animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
-    animation-iteration-count: infinite;
+   animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
+    animation-iteration-count: 1;
 }
 
 @keyframes animate{

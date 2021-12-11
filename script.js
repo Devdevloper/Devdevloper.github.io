@@ -13,6 +13,7 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass("show");
         }
+       
     });
 
     // slide-up script
